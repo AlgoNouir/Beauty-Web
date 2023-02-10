@@ -15,7 +15,7 @@ export default function Header() {
     return (
         <div
             className="bg-white w-screen fixed top-0 h-24 flex flex-row
-            justify-between items-center px-32"
+            justify-between items-center px-32 z-10"
         >
             <div>logo</div>
             <div className="fixed flex items-center justify-center w-full left-0 right-0">
@@ -34,7 +34,7 @@ export default function Header() {
                         },
                         {
                             key: 2,
-                            name: "خدمات ما",
+                            name: "خدمات مرکز",
                             dir: "/",
                             icons: <FaStethoscope />,
                         },
