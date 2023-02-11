@@ -1,5 +1,6 @@
 // base
 import { useState } from "react";
+import Image from "next/image";
 
 // my components
 import Button from "./button";
@@ -15,9 +16,16 @@ export default function Header() {
     return (
         <div
             className="bg-white w-screen fixed top-0 h-24 flex flex-row
-            justify-between items-center px-32 z-10"
+            justify-between items-center px-10 z-10"
         >
-            <div>logo</div>
+            <div>
+                <Image
+                    src="logoGrey.svg"
+                    alt="دکتر زهرا میرزامحمدی"
+                    height={200}
+                    width={200}
+                />
+            </div>
             <div className="fixed flex items-center justify-center w-full left-0 right-0">
                 <div className="grid grid-cols-3 gap-5">
                     {[
@@ -65,9 +73,11 @@ export default function Header() {
                     ))}
                 </div>
             </div>
-            <Button height={16} width={32}>
+            <button
+                className={`w-44 h-16 bg-gradient-to-tl from-darkPink/60 to-pink rounded-xl`}
+            >
                 <p className="font-bold">درخواست نوبت</p>
-            </Button>
+            </button>
         </div>
     );
 }

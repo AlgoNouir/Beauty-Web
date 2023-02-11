@@ -1,4 +1,5 @@
 // base
+import Image from "next/image";
 import { ReactNode } from "react";
 
 // icon
@@ -40,6 +41,14 @@ export default function Footer() {
                     icon={<FcOnlineSupport />}
                     title="تلفن ثابت"
                     text="یک متن تست"
+                />
+            </div>
+            <div className="overflow-hidden flex flex-row">
+                <Image
+                    src="/logoWhite.png"
+                    alt="دکتر زهرا میرزامحمدی متخصص پوست و زیبایی"
+                    width={250}
+                    height={300}
                 />
             </div>
         </div>
